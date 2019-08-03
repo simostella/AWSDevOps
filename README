@@ -18,3 +18,5 @@ configurare lo user locale per i commit
 
 AWSDevOps s.stella$ git config user.name Simone
 AWSDevOps s.stella$ git config user.email simofricke@gmail.com
+
+

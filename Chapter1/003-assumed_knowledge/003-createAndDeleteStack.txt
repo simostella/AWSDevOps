@@ -1,0 +1,15 @@
+aws cloudformation create-stack --stack-name SingleInstance --template-body file://./002-CloudFormation-EC2SingleInstance.tmpl
+
+l'output e l'id dello stack
+
+{
+    "StackId": "arn:aws:cloudformation:eu-central-1:017064246199:stack/SingleInstance/a74c7140-b604-11e9-b003-066084ff6f3a"
+}
+
+posso usare il nome per vederne lo status 
+
+aws cloudformation describe-stacks --stack-name SingleInstance 
+
+
+Per cancellarlo
+aws cloudformation delete-stack --stack-name SingleInstance
