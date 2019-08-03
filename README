@@ -1,0 +1,20 @@
+crea la cartella root
+lancia i seguenti comandi nella root
+
+git credential-store --file .git.store store 
+protocol=https
+host=github.com
+username=simo.fricke@gmail.com
+password=
+
+
+due invio dopo la password. La configurazione di git locale viene salvata.
+
+clonare il repo
+
+
+cd AWSDevOps
+configurare lo user locale per i commit
+
+AWSDevOps s.stella$ git config user.name Simone
+AWSDevOps s.stella$ git config user.email simofricke@gmail.com
