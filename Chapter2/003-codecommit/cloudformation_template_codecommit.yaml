@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Template for a CodeCommit object"
+Resources:
+  MyCodeCommitForDevOps:
+    Type: AWS::CodeCommit::Repository
+    Properties:
+      Code:
+        S3:
+          Bucket: devops-cloudformation-resources
+          Key: helloworld.zip
+      RepositoryDescription: "Built with CloudFormation"
+      RepositoryName: helloworld-from-cf
+      Tags:
+        -
+          Key: course
+          Value: DevOps
+        -
+          Key: name
+          Value: simone
